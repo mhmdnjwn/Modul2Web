@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Operasi Penjumlahan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Kalkulator Penjumlahan</h1>
+    <form id="kalkulatorForm">
+        <label for="bilangan1">Bilangan Pertama:</label>
+        <input type="number" id="bilangan1" name="bilangan1" required><br><br>
+        
+        <label for="bilangan2">Bilangan Kedua:</label>
+        <input type="number" id="bilangan2" name="bilangan2" required><br><br>
+        
+        <input type="button" value="Hitung" onclick="hitungPenjumlahan()">
+    </form>
+    
+
+    <script>
+        function hitungPenjumlahan() {
+            // Mengambil nilai dari inputan
+            var bilangan1 = parseFloat(document.getElementById("bilangan1").value);
+            var bilangan2 = parseFloat(document.getElementById("bilangan2").value);
+
+            // Melakukan operasi penjumlahan
+            var hasil = bilangan1 + bilangan2;
+
+            // Menampilkan hasilnya
+            alert("Hasil penjumlahan = " + hasil)
+        }
+    </script>
+</body>
+</html>
